@@ -51,6 +51,10 @@ main .list ul li{
     list-style-type: none;
 }
 
-main .article .Eng{
+main .work-content .article .Eng{
+    font-family:"futura";
+}
+
+main .work-content .article .Jp{
     font-family:"futura";
 }

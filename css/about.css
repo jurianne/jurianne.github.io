@@ -50,3 +50,7 @@ main
 main .list ul li{
     list-style-type: none;
 }
+
+main .article .Eng{
+    font-family:"futura";
+}

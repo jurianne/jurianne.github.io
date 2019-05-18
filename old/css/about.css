@@ -1,0 +1,61 @@
+@charset "UTF=8";
+
+
+main {
+    width:100%;
+    height:800px;
+    
+}
+
+main .list ul li{
+    list-style-type: none;
+}
+
+main .about{
+    /*width: 1180px;*/
+    padding-top:10px;
+    text-align:left;
+    float: left;
+    margin:0 auto;
+    padding:50px 0;
+    margin-top:100px
+}
+
+main .about h2{
+    /*text-align:center;*/
+    font-size:45px;
+    font-weight:normal;
+    line-height:70px;
+    padding-right: 30px;
+    margin-bottom:30px;
+}
+
+#item{
+    font-size:1em;
+    padding-top:10px;
+}
+
+main .list{
+    float:left;
+    margin-top:50px;
+    
+}
+
+
+
+main .list p{
+    font-size:25px;
+}
+
+main 
+
+
+
+
+main .work-content .article .Eng{
+    font-family:"futura";
+}
+
+main .work-content .article .Jp{
+    font-family:"futura";
+}

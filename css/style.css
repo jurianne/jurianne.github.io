@@ -394,7 +394,8 @@ iframe{
   background-color: rgba(0,0,0, .3);
   color: #ffffff;
   font-weight: 400;
-  font-size: 7.5vw;/* IE8以下非対応 */
+  /* font-size: 7.5vw;IE8以下非対応 */
+  font-size: 1.0em;
 }
 
 /* works */
@@ -439,6 +440,7 @@ a.card:hover{
   text-decoration: none;
   -webkit-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out; /* IE9非対応 */
+          color: #0a00ff;
 }
 
 .button-primary:before,
@@ -687,6 +689,7 @@ a.card:hover{
 
 .credit{
   font-size: .875em;
+  line-height: 1.7em;
   margin-bottom: 0.8em;
 }
 
@@ -821,6 +824,11 @@ a.card:hover{
   display: inline;
 }
 
+/* View moreの表示を切り替え */
+.pc-dn{
+  display: block;
+}
+
 @media screen and (min-width:768px) { 
   /* For iPad */
 
@@ -830,8 +838,8 @@ a.card:hover{
   /* For PC */
 
   .slideshow{
-    width: 960px;
-    height: 500px;
+    width: 800px;
+    height: 400px;
     margin: 0 auto;
   }
 
@@ -890,5 +898,126 @@ a.card:hover{
   }
 
 
+
+.pc-dn{
+  display: none;
+}
+
+/* works page */
+
+.works-mainimage{
+  display: inline-block;
+  width: 100%;
+ 
+  position: relative;
+}
+
+
+.l-description .works-title{
+  margin-top: 1.2em;
+  margin-bottom: 0.3em;
+  color: #0a00ff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.75em;
+}
+
+.l-description .add-info{
+  text-align: center;
+  width: 80%;
+  font-size:0.8em;
+  color: #0000004b;
+  display: inline;
+}
+
+.description-text {
+  display: block;
+  margin-top: 12px;
+  /* text-align: justify; */
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin-bottom: 3em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+/* --------------- */
+/* About Page */
+
+.l-bio-text{
+  display: block;
+  margin-top: 12px;
+  /* text-align: justify; */
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.l-bio-text .l-bio-title{
+  color: #0a00ff;
+  font-size:1.5em;
+  line-height: 1.7em;
+  margin-bottom: 1.0em;
+}
+
+.experience-list{
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.experience-list .experience-title{
+  color: #0a00ff;
+  font-size:1.0em;
+  line-height: 1.7em;
+  margin-bottom: 0.5em;
+}
+
+.experience-list .experience-item{
+  margin-bottom: 1.0em;
+  margin-left: 0.5em;
+  font-size: 0.8em;
+}
+
+.experience-list .date{
+
+}
+
+.experience-list small{
+  /* text-align: center; */
+  /* width: 80%; */
+  font-size:0.8em;
+  color: #0000004b;
+  display: inline;
+}
+
+
+.l-global-nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 3.3123em 0;
+  width: 100%;
+  height: 120%;
+  background-color: #f5f5f5;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+          transition: -webkit-transform .3s ease-in-out;
+          transition:         transform .3s ease-in-out;
+          transition:         transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  -webkit-transform: translateX(100%); /* Android, Brackberry  */
+          -ms-transform: translateX(100%); /* IE9 */
+              transform: translateX(100%);
+}
+
+.is-active-drawer .l-global-nav{
+  -webkit-transform: translateX(80%); /* Android, Brackberry  */
+      -ms-transform: translateX(80%); /* IE9 */
+          transform: translateX(80%);
+}
+
+.nav-title{
+  display: none;
+}
 
 }

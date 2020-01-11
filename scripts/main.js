@@ -41,7 +41,15 @@ $(function () {
 
 });
 
-  /* ==============================
+
+// view moreをPCでけす
+
+var $win = $(window);
+
+$win.on('load resize', function() {  
+  if (window.matchMedia('(max-width:480px)').matches) {
+	// SPの処理
+	  /* ==============================
     Accordion
   ============================== */
   $(function () {
@@ -53,3 +61,33 @@ $(function () {
 	  $(this).hide();
     });
   });
+  } else if (window.matchMedia('(max-width:768px)').matches) {
+    // TABの処理
+  } else {
+    // PCの処理
+  }
+});
+
+var $win = $(window),
+    $spDn = $('.jsc-sp-dn');
+
+$win.on('load resize', function() {
+  if ($spDn.is(':visible')) {
+    // PCの処理
+  } else {
+    // SPの処理
+  }
+});
+
+//   /* ==============================
+//     Accordion
+//   ============================== */
+//   $(function () {
+//     $('.js-hidden-item').hide();
+
+//     $('.js-button').click(function () {
+//       // イベントが発生した要素の次の要素
+// 	  $('.js-hidden-item').slideDown(300);
+// 	  $(this).hide();
+//     });
+//   });

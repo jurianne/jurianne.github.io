@@ -856,8 +856,8 @@ a.card:hover{
 
   .l-section {
     padding-top: 20em;
-    margin-left: 5.0em;
-    margin-right: 5.0em;
+    margin-left: 0.1em;
+    /* margin-right: 5.0em; */
   }
 
   .l-grid{
@@ -869,8 +869,9 @@ a.card:hover{
 
   .l-grid-item{
     display: inline-block;
-    width: 280px;
+    width: 355px;
     margin-right: 1em;
+   
     /* border: 10px solid transparent; */
   }
 

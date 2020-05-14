@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+ <html>
+      
+     <head>
+         <meta name = "viewport" content = "width = device-width, height = device-height" />
+         
+         <LINK href="styles.css" rel="stylesheet" type="text/css">
+         <SCRIPT LANGUAGE="JavaScript">
+             function trygoogle() {
+             // launch pic2shop and tell it to open Google Products with scan result
+             window.location="pic2shop://scan?callback=https://script.google.com/macros/s/AKfycbwQudJx3HHgb6bVQWH51uCJjcaxb8xZwMCOQuK7FNfvxMHUCmM/exec?isbn=EAN";
+             }
+         </SCRIPT>
+     </head>
+     <body>
+         <h2>Pic2shop Callback Demo</h2>
+         <div class="intro">
+             This demo launches the <em>free</em> pic2shop barcode scanner, then searches Google Products with the UPC. 
+             In a real setting:
+             <ul>
+                 <li>the call back would be to your own web application</li>
+                 <li>the scan button would only be shown to iPhone/Android users</li>
+             </ul>
+         </div>
+         <FORM>
+            <INPUT TYPE=BUTTON OnClick="trygoogle();" VALUE="Scan Barcode">
+         </FORM>
+         <div class="refs">
+             See the <a href="scan_source.html">source code</a>.
+             <br/>
+             Check out the <a href="https://www.pic2shop.com/developers.html">developers' page</a>.
+         </div>
+     </body>
+      
+ </html>
+
+ 

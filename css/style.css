@@ -627,22 +627,7 @@ a.card:hover{
   display: inline;
 }
 
-.description-text {
-  display: block;
-  margin-top: 12px;
-  /* text-align: justify; */
-  font-size: 1em;
-  line-height: 1.5;
-  margin-bottom: 3em;
-}
 
-.description-text > p:first-of-type {
-  margin-bottom: 12px;
-}
-
-.description-text > div:last-of-type {
-  margin-top: 12px;
-}
 
 .description-text-en{
   margin-bottom: 1.0em;
@@ -836,6 +821,12 @@ a.card:hover{
     text-align: center;
     font-weight: 400;
     font-size: 1.25em;
+  }
+
+  .l-section {
+    padding-top: 20em;
+    margin-left: 0.1em;
+    /* margin-right: 5.0em; */
   }
 
   /* For iPad */

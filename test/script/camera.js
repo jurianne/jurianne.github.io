@@ -1,4 +1,4 @@
-var camera = document.getElementById('camera');
+var camera = document.getElementById('cam');
 var frame = document.getElementById('frame');
 
 camera.addEventListener('change', function(e) {

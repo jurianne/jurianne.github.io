@@ -4,18 +4,5 @@ var player = document.getElementById('player');
     player.srcObject = stream;
   };
 
-  navigator.mediaDevices.getUserMedia({ audio: true, video: true })
-      .then(handleSuccess)
-
-      navigator.permissions.query({name:'camera'}).then(function(result) {
-        if (result.state == 'granted') {
-      
-        } else if (result.state == 'prompt') {
-      
-        } else if (result.state == 'denied') {
-      
-        }
-        result.onchange = function() {
-      
-        };
-      });
+  navigator.mediaDevices.getUserMedia({video: true})
+      .then(handleSuccess);

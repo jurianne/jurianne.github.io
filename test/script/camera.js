@@ -18,8 +18,8 @@ document.getElementById('videoPreview').appendChild(video);
 media = navigator.mediaDevices.getUserMedia({
   audio: false,
   video: {
-    width: { ideal: resolution.w },
-    height: { ideal: resolution.h }
+    width: { ideal: 640 },
+    height: { ideal: 300 }
   }
 }).then(function(stream) {
   video.srcObject = stream;
